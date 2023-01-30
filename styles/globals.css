@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .stroke {
+    -webkit-text-stroke: 0.7px black;
+  }
+  .stroke2 {
+    -webkit-text-stroke: 1px black;
+  }
+}
+
+.tech-item {
+  @apply text-53 cursor-pointer leading-none font-black sm:hover:text-transparent sm:text-7xl lg:text-9xl lg:text-transparent lg:stroke2 lg:hover:text-black duration-300 xl:text-150;
+}
+.tech-border {
+  @apply hidden lg:inline w-screen border border-black h-24 xl:h-28;
+}
+.project-item {
+  @apply w-72 h-40 absolute font-extrabold text-lg pl-3 pt-5 hover:-translate-y-5 duration-300 ease-in-out cursor-pointer active:-translate-y-10 active:duration-200 md:w-80 md:h-48 lg:w-500 lg:h-64 xl:w-600 xl:h-440 xl:text-2xl xl:pl-5 2xl:w-700;
+}
+.nav-item {
+  @apply mr-2 font-nunito sm:font-semibold;
+}
+.project-container {
+  @apply flex flex-col items-center cursor-pointer relative;
+}
